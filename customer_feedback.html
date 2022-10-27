@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Service Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Customer Service Feedback</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve our customer service!
+      </p>
+      <div id="form">
+        <form action="" id="survey-form">
+          <!-- Name Input -->
+          <div class="form-group">
+            <label for="name" id="name-label" class="required">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. John Doe"
+              required
+            />
+          </div>
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email" id="email-label" class="required"> Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. myname@example.com"
+              required
+            />
+          </div>
+          <!-- Date Input -->
+          <div class="form-group">
+            <label for="contact-date" id="date-label" class="required"
+              >Date of Cutsomer Service Use:</label
+            >
+            <input type="date" id="contact-date" name="contact-date" required />
+          </div>
+          <div class="form-group" id="table-wrap">
+            <fieldset>
+              <legend class="required">Evaluation of Customer Service</legend>
+              <!-- Table of Radio Buttons Input -->
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Very Satisfied</th>
+                  <th>Satisfied</th>
+                  <th>Neutral</th>
+                  <th>Unsatisfied</th>
+                  <th>Very Unsatisfied</th>
+                </tr>
+                <tr>
+                  <th>Friendliness</th>
+                  <td>
+                    <input
+                      type="radio"
+                      id="friend-very-satisfied"
+                      name="friendliness"
+                      value="very-satisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="friend-satisfied"
+                      name="friendliness"
+                      value="satisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="friend-neutral"
+                      name="friendliness"
+                      value="neutral"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="friend-unsatisfied"
+                      name="friendliness"
+                      value="unsatisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="friend-very-unsatisfied"
+                      name="friendliness"
+                      value="very-unsatisfied"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Knowledge</th>
+                  <td>
+                    <input
+                      type="radio"
+                      id="knowledge-very-satisfied"
+                      name="knowledge"
+                      value="very-satisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="knowledge-satisfied"
+                      name="knowledge"
+                      value="satisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="knowledge-neutral"
+                      name="knowledge"
+                      value="neutral"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="knowledge-unsatisfied"
+                      name="knowledge"
+                      value="unsatisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="knowledge-very-unsatisfied"
+                      name="knowledge"
+                      value="very-unsatisfied"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Timeliness</th>
+                  <td>
+                    <input
+                      type="radio"
+                      id="timeliness-very-satisfied"
+                      name="timeliness"
+                      value="very-satisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="timeliness-satisfied"
+                      name="timeliness"
+                      value="satisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="timeliness-neutral"
+                      name="timeliness"
+                      value="neutral"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="timeliness-unsatisfied"
+                      name="timeliness"
+                      value="unsatisfied"
+                      required
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      id="timeliness-very-unsatisfied"
+                      name="timeliness"
+                      value="very-unsatisfied"
+                      required
+                    />
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </div>
+          <!-- Radio Buttons -->
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Would you recommend our customer service to a friend or
+                colleague?
+              </legend>
+              <label for="definitely"
+                ><input
+                  type="radio"
+                  value="definitely"
+                  id="definitely"
+                  name="recommendation"
+                />
+                Definitely</label
+              >
+              <label for="maybe"
+                ><input
+                  type="radio"
+                  value="maybe"
+                  id="maybe"
+                  name="recommendation"
+                />
+                Maybe</label
+              >
+              <label for="not-sure"
+                ><input
+                  type="radio"
+                  value="not-sure"
+                  id="not-sure"
+                  name="recommendation"
+                />
+                Not Sure</label
+              >
+            </fieldset>
+          </div>
+
+          <!-- Text Area -->
+          <div class="form-group">
+            <label for="comments">
+              Do you have any other comments regarding the customer service you
+              received?</label
+            >
+            <textarea
+              name="comments"
+              id="comments"
+              rows="7"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
